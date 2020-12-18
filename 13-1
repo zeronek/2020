@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .exam01{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            transition: all 3s linear 0s;
+        }
+        .exam01:hover{
+            border-radius: 50%;
+            border: 5px solid blue;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="exam01"></div>
+</body>
+</html>

@@ -1,10 +1,284 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        a:link {text-decoration: none; color: black;}
+
+
+        html, body{margin:0; padding:0; height:100%;}
+
+        .flex-container{
+        display: flex;
+        justify-content: center;
+        width:100%;
+        height:50%;
+        background: white;
+        }
+        .flex-item{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        background: #adadad;
+        }
+
+        .circle-image{
+            width:200px;
+            height:200px;
+            text-align: center;
+            border-radius:50%;
+            background:#555555;
+        }
+        .exam02{
+            border: 3px solid black;
+            border-radius : 10px;
+            padding: 10px;
+            display:inline-block;
+            transition: all 1s ease 0s;
+            font-weight:bold;
+            color:black;
+            position: center;
+
+        }
+        .exam02:hover{
+            box-shadow:10px 10px #e0e0e0,20px 20px #adadad,30px 30px #909090,40px 40px #888888;
+        }
+        .email{
+            color:black;
+            font-weight:bold;
+        }
+        .phone{
+            color:black;
+            font-weight:bold;
+        }
+        .Education{
+
+            color:black;
+        }
+
+
+        .cube{
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transform: translateZ(-100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            animation: spin 10s infinite;
+        }
+
+
+        @keyframes spin{
+            0%{transform: translateZ(-50px) rotateX(0deg) rotateY(0deg);}
+            100%{transform: translateZ(-50px) rotateX(360deg) rotateY(360deg);}
+        }
+        .face{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity:  .5;
+        }
+        .front{
+            background-color: #c3598a;
+            transform: rotateY(0deg) translateZ(100px);
+            font-weight: bold;
+            font-size:8ex;
+            text-align: center;
+        }
+        .back{
+            background-color: #c3590a;
+            transform: rotateY(180deg) translateZ(100px);
+            font-size:8ex;
+            text-align: center;
+        }
+        .right{
+            width: 200px;
+            height: 200px;
+            background-color: #4C65F8;
+            transform: rotateY(90deg) translateZ(100px);
+            font-size:8ex;
+            text-align: center;
+        }
+        .left{
+            width: 200px;
+            height: 200px;
+            background-color: #4584b1;
+            transform: rotateY(-90deg) translateZ(100px);
+            font-size:8ex;
+            text-align: center;
+        }
+        .top{
+            width: 200px;
+            height: 200px;
+            background-color: #9DFCFE;
+            transform: rotateX(90deg) translateZ(100px);
+            font-size:8ex;
+            text-align: center;
+        }
+        .bottom{
+            width: 200px;
+            height: 200px;
+            background-color: #00ff90;
+            transform: rotateX(-90deg) translateZ(100px);
+            font-size:8ex;
+            text-align: center;
+        }
+
+        .container3{
+            width: 50%;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cube3{
+            width: 300px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transform: translateZ(-100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            animation: spin3 10s infinite;
+        }
+
+
+        @keyframes spin3{
+            0%{transform: translateZ(-50px) rotateX(0deg) rotateY(0deg);}
+            100%{transform: translateZ(-50px) rotateX(0deg) rotateY(360deg);}
+        }
+        .face3{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity:  .5;
+        }
+        .front3{
+            background-color: #c3598a;
+
+            transform: rotateY(0deg) translateZ(50px);
+        }
+        .back3{
+            background-color: #c3590a;
+            transform: rotateY(180deg) translateZ(50px);
+        }
+        .right3{
+            width: 100px;
+            height: 200px;
+            background-color: #4C65F8;
+            transform: rotateY(90deg) translateZ(150px);
+        }
+        .left3{
+            width: 100px;
+            height: 200px;
+            background-color: #4584b1;
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+        .top3{
+            width: 300px;
+            height: 100px;
+            background-color: #9DFCFE;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .bottom3{
+            width: 300px;
+            height: 100px;
+            background-color: #00ff90;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+
+    </style>
 </head>
 <body>
-<strong> fuck </strong>
+<div class="flex-container">
+    <div class="flex-item">
+    <img class="circle-image" src="01.jpg" />
+        <p>  <div class="exam02">kim young il</div></p>
+        <p><a href="zerone-@naver.com"> <div class="email"> Email: zerone-@naver.com </div>  </a></p>
+        <p><a  href="01080065105"> <div class="phone"> phone: 01080065105 </div></a></p>
+        <div class="table">
+            <table class="Education">
+                <thead>
+                <tr>
+                    <th>학력</th>
+                    <th>&nbsp</th>
+                    <th>&nbsp</th>
+                    <th>&nbsp</th>
+                    <th>&nbsp</th>
+                    <th>&nbsp</th>
+                    <th>&nbsp</th>
+                    <th>경력</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>제주대학교</td>
+                    <td></td>
+                    <td>졸업</td>
+
+                </tr>
+                <tr>
+                    <td>영주고등학교 </td>
+                    <td></td>
+                    <td>졸업</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>제주동중학교</td>
+                    <td></td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>삼양초등학교</td>
+                    <td></td>
+                    <td>졸업</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+</div>
+</div>
+<div class="container">
+    <div class="scene">
+        <div class="cube">
+            <div class="face back">남자</div>
+            <div class="face right">잘생김</div>
+            <div class="face left">디자인</div>
+            <div class="face top">게임</div>
+            <div class="face bottom">착함</div>
+            <div class="face front">늦둥이</div>
+        </div>
+    </div>
+</div>
+<div class="container3">
+    <div class="scene3">
+        <div class="cube3">
+            <div class="face3 back3"><img class="2" src="01.jpg"width="300" height="200"/></div>
+            <div class="face3 right3"><img class="2" src="03.jpg"width="100" height="200"/></div>
+            <div class="face3 left3"><img class="2" src="04.jpg"width="100" height="200"/></div>
+            <div class="face3 top3"></div>
+            <div class="face3 bottom3"></div>
+            <div class="face3 front3"><img class="2" src="02.jpg"width="300" height="200"/></div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</body>
 </body>
 </html>

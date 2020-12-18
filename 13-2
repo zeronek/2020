@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Transform Example</title>
+        <style>
+            .exam02{
+                border: 5px solid black;
+                border-radius : 10px;
+                padding: 15px;
+                display:inline-block;
+                transition: all 1s ease 0s;
+            }
+            .exam02:hover{
+                box-shadow:10px 10px #e0e0e0,20px 20px #adadad,30px 30px #909090,40px 40px #888888;
+            }
+
+        </style>
+        </head>
+        <body>
+            <div class="exam02">그림자 transiton</div>
+        </body>
+    </html>
